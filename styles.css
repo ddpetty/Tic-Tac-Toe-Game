@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Styles the new game button within the parent div */
+#new-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+button {
+	 border-radius: 10px;
+	 box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+
+}
+
+
+
+
+header {
+	text-align: center;
+	margin: 50px;
+}
+
+#head {
+	font-size: 50px;
+	font-family: 'Work Sans', sans-serif;
+	color: #3366CC;
+}
+
+h1#result {
+	font-size: 30px;
+	font-family: 'Work Sans', sans-serif;
+	color: #9A3334;
+	text-align: center;
+	margin: 15px 0;
+}
+
+/* Styles the canvases for x's and o's */
+canvas {
+	border: 1px solid  #333399;
+	background: #1E90FF;
+	box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+
+}
+	
+
+ 
+#game {
+	position: relative;
+	width: 640px;
+	height: 320px;
+	margin: 0 auto;
+}
+#tic {
+	position: relative;
+	margin: 0 auto;
+	height: 318px;
+	width: 318px;
+	display: inline-block;
+	float: left;
+}
+
+#rules {
+	position: relative;
+	width: 318px;
+	height: 318px;
+	text-align: center;
+	display: inline-block;
+	float: right;
+}
+
+
+p {
+	font-size: 26px;
+	margin: 15px;
+	color: #9A3334;
+}
+
+
+h2 {
+	font-size: 35px;
+	color: #9A3334;
+}
+
+button {
+	margin: 15px 0 0 0;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	background: #217C7E;
+	color: #F3EFE0; 
+	font-family: 'Work Sans', sans-serif;
+	border: 1px solid black;
+}
+
+canvas:hover {
+	background: #217C7E;
+}
+
+button:hover {
+	background:  #F3EFE0;
+	color: #217C7E;
+}
+
+/*      Media queries        */
+
+/* Small screens */
+
+@media only screen and (max-device-width: 480px) {
+
+	html {
+	height: 100%; 
+	}
+
+	#game {
+	/* position: relative; */
+	width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	}
+
+	#tic {
+	position: relative;
+	margin: 0 auto;
+	height: 318px;
+	width: 318px;
+	display: inline-block;
+	float: left;
+}
+
+	header {
+	margin: 20px 50px;
+	max-height: 50px;
+	}
+
+
+	#head {
+	font-size: 25px;
+	}
+
+	h1#result {
+	font-size: 15px;
+	font-family: verdana;
+	color: #9A3334;
+	text-align: center;
+	margin: 20px 0;
+	}
+  
+  #rules {
+	margin: 100px auto 20px auto;
+	width: 318px;
+	height: 318px;
+	text-align: center;
+	display: inline-block;
+	float: right;
+}
+  
+ button {
+	 margin: 0 0 10px 0;
+  }
+
+
+
+
+}
